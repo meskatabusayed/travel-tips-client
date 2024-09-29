@@ -14,14 +14,16 @@ import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 
-import { siteConfig } from "@/src/config/site";
-import { ThemeSwitch } from "@/src/components/ui/theme-switch";
-import { Logo } from "@/src/assets/icons";
+
 import Link from "next/link";
 import NavabrDropdown from "./NavabrDropdown";
-import { useUser } from "@/src/context/user.provider";
+
 import { useRouter } from "next/navigation";
 import { Button } from "@nextui-org/button";
+import { Logo } from "@/assets/icons";
+import { ThemeSwitch } from "./theme-switch";
+import { siteConfig } from "@/config/site";
+import { useUser } from "@/context/user.provider";
 
 export const Navbar = () => {
   const { user } = useUser();
